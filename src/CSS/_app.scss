@@ -1,0 +1,11 @@
+.App {
+    @include breakpoint-up(medium) {
+        display: grid;
+        grid-template-columns: 137px 1fr;
+    }
+
+    @include breakpoint-up(xlarge) {
+        grid-template-columns: 262px 1fr;
+
+    }
+}

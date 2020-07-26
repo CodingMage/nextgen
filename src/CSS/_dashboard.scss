@@ -1,0 +1,26 @@
+.dashboard {
+    padding: 0 16px;
+
+    .topbar {
+        height: 67px;
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        align-items: center;
+        border-bottom: 1px solid;
+        border-color: rgba(222, 231, 239, 1);
+
+
+        .search {
+            margin-right: 12px;
+
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            justify-self: end;
+        }
+    }
+}

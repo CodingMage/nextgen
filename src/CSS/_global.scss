@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1c3faa;
+
+    // padding: 0 12px;
+    @include breakpoint-up(medium) {
+        padding-right: 32px;
+        padding-top: 20px;
+    }
+}
