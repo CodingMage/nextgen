@@ -17,6 +17,10 @@ import { ReactComponent as Forms } from '../svgs/forms.svg';
 import { ReactComponent as Widget } from '../svgs/widget.svg';
 import { ReactComponent as Home } from '../svgs/dashboard.svg';
 import { ReactComponent as Menu } from '../svgs/menu.svg';
+import { ReactComponent as Wave } from '../svgs/wave.svg';
+
+
+
 
 
 
@@ -31,9 +35,15 @@ import { ReactComponent as Menu } from '../svgs/menu.svg';
 function SideBar() {
 
     const [open, setOpen] = useState(true);
+    const [open1, setOpen1] = useState(true);
+
 
     const handleOpen = () => {
         setOpen(!open)
+        console.log('opren');
+    }
+    const handleOpen1 = () => {
+        setOpen1(!open1)
         console.log('opren');
     }
 
@@ -51,7 +61,18 @@ function SideBar() {
 
                 <ul className={`side__menu ${open ? '' : 'open'}`}>
                     <li><Home /> <p>Dashboard</p> </li>
-                    <li><Box />  <p>Menu Layout</p> </li>
+                    <li className='drop' >
+
+                        <div className='drop-btn' onClick={handleOpen1}><Box />  <span>Menu Layout</span></div>
+                        <ul className={`dropdown ${open1 ? '' : 'open1'}`}>
+                            <li><Wave /> <span>Side Menu</span></li>
+                            <li><Wave /> <span>Simple Menu</span></li>
+                            <li><Wave /> <span>Top Menu</span></li>
+
+                        </ul>
+
+                    </li>
+
                     <li><Inbox />  <p>Inbox</p> </li>
                     <li><File />  <p>File Manager</p> </li>
                     <li><Pos />  <p>Point of Sales</p> </li>
@@ -74,7 +95,7 @@ function SideBar() {
             </div>
 
 
-        </div>
+        </div >
     );
 };
 

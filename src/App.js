@@ -3,11 +3,15 @@ import SideBar from './Components/SideBar';
 import './CSS/style.css';
 import Main from './Components/Main';
 
-function App() {
+
+function App(props) {
+
   return (
     <div className="App">
       <SideBar />
+
       <Main />
+
     </div>
   );
 }
