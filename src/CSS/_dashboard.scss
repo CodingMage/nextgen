@@ -23,4 +23,35 @@
             justify-self: end;
         }
     }
+
+    .intro {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        height: 40px;
+        align-items: center;
+
+        h2 {
+            font-size: 1.125rem;
+        }
+
+        p {
+            color: rgba(28, 63, 170, 1);
+            display: flex;
+            align-items: center;
+            font-size: 0.875rem;
+
+            svg {
+                margin-right: 0.75rem;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    .report__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
 }
