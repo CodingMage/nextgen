@@ -1,0 +1,90 @@
+.sidebarlist {
+    color: white;
+    cursor: pointer;
+
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        width: 100%;
+        height: 50px;
+        font-size: 14px;
+
+        // pointer-events: none;
+
+        @include breakpoint-up(small) {
+            padding: 0 2.5rem;
+        }
+
+        @include breakpoint-up(medium) {
+            padding: 0 0 0 52px;
+
+        }
+
+        @media screen and (max-width: 1279px) and (min-width: 768px) {
+            p {
+                display: none;
+            }
+        }
+    }
+
+
+}
+
+.sidebarlist__arrow {
+    margin-left: auto;
+    transition: all 100ms ease-in;
+
+}
+
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+    .sidebarlist__arrow {
+        display: none;
+    }
+}
+
+.sidebarlist__icon {
+    margin-right: 12px;
+
+    @include breakpoint-up(medium) {
+        margin-right: 0;
+    }
+
+    @include breakpoint-up(xlarge) {
+        margin-right: 12px;
+
+    }
+
+}
+
+.listdrop {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    background-color: rgba(26, 56, 159, 1);
+    border-radius: 0.375rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    max-height: 0;
+    transition: max-height 600ms ease-in;
+    overflow: hidden;
+
+    @include breakpoint-up(small) {
+        padding: 0 2.5rem !important;
+    }
+
+    @include breakpoint-up(medium) {
+        // padding: 0 0 0 52px !important;
+
+    }
+
+}
+
+.show {
+    max-height: 600px;
+
+}
+
+.invert {
+    transform: rotate(180deg);
+}

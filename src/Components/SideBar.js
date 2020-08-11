@@ -58,6 +58,8 @@ function SideBar() {
     }
     const handleOpen1 = () => {
         setOpen1(!open1)
+        invertarrow();
+
 
     }
     const handleOpen2 = () => {
@@ -83,13 +85,41 @@ function SideBar() {
     const handleOpen6 = () => {
 
         setOpen6(!open6);
+        //     const arrows = document.querySelector('.arrowup')
+        // //     arrows.classList.toggle('testdom')
+        //     arrows.classList.toggle('testdom')
+        //     console.log(arrows)
+
         invertarrow();
 
     }
     const invertarrow = () => {
         const arrows = document.querySelectorAll('.arrowup')
+        const arr = document.querySelector('.drop-btn')
 
-        console.log(arrows)
+        // arrows.classList.toggle('testdom')
+
+
+        arrows.forEach(function (arrow) {
+
+            arr.addEventListener('click', function () {
+                // console.log(arrow)
+                arrow.classList.toggle('testdom')
+
+            })
+
+            // for (let arrow of arrows) {
+            //     // console.log(arrow)
+            // arrows.addEventListener('click', function () {
+            //     // console.log(arrow)
+            //     arrows.classList.toggle('testdom')
+
+        })
+        // }
+
+
+
+        // console.log(arrows)
     }
 
 

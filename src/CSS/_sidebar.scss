@@ -163,7 +163,7 @@
     }
 
     @include breakpoint-up(medium) {
-        padding: 0 0 0 52px !important;
+        // padding: 0 0 0 52px !important;
 
     }
 
@@ -260,4 +260,8 @@ ul {
     to {
         height: auto;
     }
+}
+
+.testdom {
+    color: aqua;
 }

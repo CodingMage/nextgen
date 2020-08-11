@@ -1,0 +1,94 @@
+.side {
+
+    overflow: hidden;
+    margin-bottom: 24px;
+
+    @include breakpoint-up(medium) {
+        padding-right: 20px;
+    }
+
+
+
+
+    .sep {
+        position: relative;
+        background-color: #1c3faa;
+
+        z-index: 99;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        height: 70px;
+        border-bottom: 1px solid;
+        $border-opacity: 1;
+        border-color: #2e51bb;
+        border-color: rgba(46, 81, 187, $border-opacity);
+
+        @include breakpoint-up(small) {
+            padding: 0 2rem;
+        }
+
+        @include breakpoint-up(medium) {
+            padding: 16px 0 0 52px;
+            align-items: unset;
+
+        }
+
+    }
+
+
+    &_brand {
+        width: 32px;
+        height: 32px;
+
+    }
+
+    &_icon {
+        color: white;
+        cursor: pointer;
+        transform: rotate(-90deg);
+
+        @include breakpoint-up(medium) {
+            display: none;
+        }
+
+
+    }
+
+    .MuiSvgIcon-root {
+        width: 32px;
+        height: 32px;
+
+    }
+
+}
+
+.divider {
+    margin-top: 1.5rem;
+    height: 1px;
+    min-height: 1px;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e2e8f0;
+    background-color: rgba(46, 81, 187, 1);
+    margin-bottom: 1.5rem;
+}
+
+.move {
+    max-height: 0;
+    transition: max-height 1s ease;
+
+
+}
+
+.open {
+    max-height: 2999px;
+
+}
+
+// .show {
+//     display: none;
+// }
