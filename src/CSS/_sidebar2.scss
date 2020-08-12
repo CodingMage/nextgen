@@ -13,14 +13,15 @@
     .sep {
         position: relative;
         background-color: #1c3faa;
+        margin-top: -20px;
 
         z-index: 99;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
+        // padding-left: 0.75rem;
+        // padding-right: 0.75rem;
         height: 70px;
         border-bottom: 1px solid;
         $border-opacity: 1;
@@ -28,11 +29,12 @@
         border-color: rgba(46, 81, 187, $border-opacity);
 
         @include breakpoint-up(small) {
-            padding: 0 2rem;
+            margin-top: 0;
+            // padding: 0 2rem;
         }
 
         @include breakpoint-up(medium) {
-            padding: 16px 0 0 52px;
+            // padding: 16px 0 0 52px;
             align-items: unset;
 
         }

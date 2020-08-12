@@ -1,7 +1,15 @@
 .App {
+    padding: 20px 12px;
+
+    @include breakpoint-up(small) {
+        padding: 20px 32px;
+
+    }
+
     @include breakpoint-up(medium) {
         display: grid;
-        grid-template-columns: 137px 1fr;
+        grid-template-columns: 85px 1fr;
+
     }
 
     @include breakpoint-up(xlarge) {
